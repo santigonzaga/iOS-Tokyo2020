@@ -11,10 +11,20 @@ struct SportView: View {
     var body: some View {
         ScrollView {
             VStack {
-                SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
+                SportImageView(image: Image("Tennis-banner"))
+                    .padding(.top, -20)
                 
                 SportDetailsContent()
-                    .padding(20)
+                    .padding(.horizontal, 20)
+                    .padding(.leading, 120)
+            }
+        }
+        .navigationBarHidden(false)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                CustomFont(text: "TENNIS", fontSize: 25, fontWeight: .semibold)
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
             }
         }
     }

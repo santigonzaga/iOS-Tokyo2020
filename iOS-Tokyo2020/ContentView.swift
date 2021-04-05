@@ -5,12 +5,14 @@
 //  Created by Joao Gabriel Dourado Cervo on 29/03/21.
 //
 
+
+
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LoginView()
     }
 }
 

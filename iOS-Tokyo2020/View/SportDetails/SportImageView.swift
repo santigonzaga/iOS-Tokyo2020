@@ -14,12 +14,14 @@ struct SportImageView: View {
         image
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(height: 205, alignment: .center)
+            .border(Color.gray, width: 1)
+
+            .frame(width: .infinity, height: 220)
     }
 }
 
 struct SportImageView_Previews: PreviewProvider {
     static var previews: some View {
-        SportImageView(image: Image("1200px-Flag_of_the_Czech_Republic.svg"))
+        SportImageView(image: Image("Tennis-banner"))
     }
 }

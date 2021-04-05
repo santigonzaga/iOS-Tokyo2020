@@ -11,14 +11,14 @@ struct SportResults: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                CustomFont(text: "Results", fontSize: 20, fontWeight: .heavy)
+                CustomFont(text: "Results", fontSize: 20, fontWeight: .semibold)
                     
                 Spacer()
             }
             
             HStack(spacing: 20) {
-                ResultsView()
-                ResultsView()
+                ResultsView(category: "WOMAN", athleteName: "Serena Williams", athleteImageName: "serena-williams-promo-e1569012559666")
+                ResultsView(category: "MEN", athleteName: "Rafael Nadal", athleteImageName: "20190116-nadal-ebden-day-3-009_g_fixed_big")
             }
         }
         .padding(.top, 15)
